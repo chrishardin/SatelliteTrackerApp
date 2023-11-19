@@ -1,0 +1,69 @@
+/satellite_tracker
+|-- /android
+|-- /ios
+|-- /lib
+|   |-- /src
+|       |-- /models
+|           |-- satellite.dart
+|           |-- user.dart
+|       |-- /views
+|           |-- /auth
+|               |-- login_screen.dart
+|               |-- signup_screen.dart
+|               |-- welcome_screen.dart
+|           |-- /home
+|               |-- home_screen.dart
+|               |-- satellite_detail_screen.dart
+|           |-- /common
+|               |-- custom_button.dart
+|               |-- custom_text_field.dart
+|       |-- /view_models
+|           |-- auth_view_model.dart
+|           |-- satellite_view_model.dart
+|       |-- /services
+|           |-- auth_service.dart
+|           |-- satellite_service.dart
+|       |-- /utils
+|           |-- validators.dart
+|           |-- constants.dart
+|       |-- /widgets
+|           |-- satellite_map.dart
+|           |-- satellite_list.dart
+|   |-- main.dart
+|-- /test
+|   |-- /unit_tests
+|   |-- /widget_tests
+|-- pubspec.yaml
+
+Explanation:
+/android and /ios: These directories hold platform-specific code and configurations for Android and iOS, respectively. They are automatically generated and managed by Flutter.
+
+/lib: This is where the Dart code of your Flutter application will reside.
+
+/src: Contains the source code for your app, typically including models, views, view models, services, utilities, and custom widgets.
+
+/models: Contains data models like Satellite and User that might represent the data structure for satellites and user profiles.
+
+/views: Contains the UI code of your app, organized by screens or features.
+
+/auth: Contains authentication-related screens such as login, sign-up, and welcome.
+
+/home: Contains screens that the user navigates to after logging in, like the home screen and satellite detail view.
+
+/common: Contains UI components that are reused across different screens, like custom buttons and text fields.
+
+/view_models: Contains the business logic and state management for the views, using a pattern like Provider, Bloc, or MVVM.
+
+/services: Contains services that handle operations like authentication (AuthService) and data fetching (SatelliteService).
+
+/utils: Contains utility files like validators for form input and constants for storing global variables.
+
+/widgets: Contains custom widgets that might be used throughout your app, such as a satellite map view or a list display of satellites.
+
+/test: Contains all your Dart tests, possibly further organized into unit and widget tests.
+
+main.dart: The entry point of your Flutter application, where the runApp function is called.
+
+pubspec.yaml: The file where you define the configuration of your project, including dependencies, assets, and other metadata.
+
+This structure aims to keep related files close to each other while separating concerns, making your code easier to navigate and maintain. It's also scalable, allowing you to add more directories as your project grows, such as for localization (/l10n) or theming (/theme).

@@ -1,0 +1,35 @@
+1. Setup Your Flutter Project:
+Create a new Flutter project in your IDE.
+Set up your directory structure for screens, widgets, services, and models.
+2. Design the UI:
+Begin with the main.dart file to set up your MaterialApp and the initial route.
+3. Implement the Welcome Screen:
+Use a Scaffold widget to set up the basic structure.
+Add an AppBar for the top bar, if needed.
+Use a Column or ListView widget to layout the text and buttons.
+For buttons like "Log in", "Join now", and "Continue as a guest", use ElevatedButton or FlatButton widgets.
+Implement navigation to the login page when the "Log in" or "Join now" button is tapped.
+4. Implement the Login Screen:
+Again, use a Scaffold widget.
+For input fields, use TextFormField widgets wrapped in a Form widget to handle user input.
+Implement form validation to check the user input for email and password.
+Use ElevatedButton for the "Sign In" button and set up onPressed callbacks for authentication logic.
+Add social media sign-in options using packages like flutter_signin_button.
+5. Set Up Firebase:
+Integrate Firebase into your Flutter project by following the official documentation.
+Use Firebase Auth to manage user authentication based on the inputs from your login form.
+6. Handle User Authentication:
+Write the logic for signing in users with email and password using Firebase Auth.
+Use Firebase Auth to handle OAuth flows for "Facebook" and "Google" sign-in methods.
+7. Implement Navigation:
+Set up named routes in your MaterialApp configuration.
+Use Navigator.pushNamed to navigate to different screens upon successful login or registration.
+8. Work on State Management:
+Decide on a state management approach (Provider, Riverpod, Bloc, etc.).
+Implement the necessary providers or blocs to manage the state of your UI based on user authentication status.
+9. Finalize the UI:
+Once the functionality is in place, focus on the aesthetics, aligning your Flutter widgets with the design language of the wireframes.
+Use themes to ensure consistent styling of text and buttons throughout the app.
+10. Test Your App:
+Write widget tests to ensure each part of your UI works as expected.
+Conduct manual testing to ensure the flow matches the user experience outlined in the wireframes.
